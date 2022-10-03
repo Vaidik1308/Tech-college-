@@ -1,0 +1,186 @@
+html
+{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Merriweather', serif;
+    font-size: 10px;
+    color: rgb(61, 62, 62);
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1
+{
+    font-size:5rem;
+    cursor: pointer;
+}
+a
+{
+    text-decoration: none;
+    color:inherit;
+}
+a:hover
+{
+    color:rgb(104, 114, 166) ;
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+li
+{
+    font-size: 1.6rem;
+    margin: 0 10px;
+}
+img
+{
+    width: 100%;
+    display: block;
+}
+.apply
+{
+    position: relative;
+    text-align: center;
+}
+.text-overlay
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.4rem;
+    background-color: rgba(40, 40, 40, 0.6);
+    border-radius: 5px;
+    padding: 2rem 5rem;
+    color: white;
+}
+button
+{
+    background: none;
+    border: 3px solid rgb(169, 252, 169);
+    border-radius: 3px;
+    color: inherit;
+    cursor: pointer;
+}
+button:hover
+{
+    border-color: rgb(220,237 , 255);
+    transform: scale(1.07);
+}
+.grid-item p
+{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.grid-item:hover
+{
+    filter: brightness(0.5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.course-title
+{
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 2.2rem;
+    /* font-weight: normal; */
+}
+.sports
+{
+    background-color: #eee;
+}
+.sports-text
+{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding: 2.2rem;
+}
+.sports-text h3
+{
+    font-size: 2.2rem;
+}
+.italic
+{
+    font-style: italic;
+}
+footer
+{
+    text-align: center;
+    background-color:rgb(62, 61, 61) ;
+    color: #ddd;
+    padding: 1rem 0;
+}
+footer h3
+{
+    font-size: 1.8rem;
+}
+footer ul
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    margin: 0;
+}
+footer li
+{
+    padding:  1.6rem 0;
+}
+footer p 
+{
+    font-size: 1.6rem;
+}
+@media(min-width: 900px)
+{
+    header
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    .text-overlay
+    {
+        padding: 8rem;
+        font-size: 2.4rem;
+    }
+    .courses
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2rem;
+        padding-bottom: 2rem;
+        margin: 0 10px;
+    }
+    .grid-item
+    {
+        border: 1px solid lightgrey;
+        border-radius: 16px;
+    }
+    .grid-item img
+    {
+        border-radius: 16px 16px 0 0;
+    }
+    .sports
+    {
+        display: flex;
+    }
+    .sports > div
+    {
+        flex: 1;
+    }
+    .sports-text
+    {
+        padding: 2rem 0;
+    }
+    footer ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
